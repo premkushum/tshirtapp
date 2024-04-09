@@ -11,7 +11,7 @@ const App = () => {
 
   const handleAddProduct = async (product) => {
     try {
-      const response = await fetch('https://crudcrud.com/api/fed6c0f72fa24d289792bb9f438e4b75/product', {
+      const response = await fetch('https://crudcrud.com/api/446974d9c4f24f35806679aa3d266583/product', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
