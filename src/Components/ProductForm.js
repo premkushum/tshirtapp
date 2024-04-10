@@ -17,7 +17,6 @@ const ProductForm = ({ onAddProduct }) => {
       quantity: { large: quantityLarge, medium: quantityMedium, small: quantitySmall }
     };
     onAddProduct(product);
-    // Clear input fields
     setName('');
     setDescription('');
     setPrice('');
