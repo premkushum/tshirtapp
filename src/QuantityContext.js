@@ -1,9 +1,7 @@
 import React, { createContext, useState, useContext } from 'react';
 
-// Context create karna
 export const QuantityContext = createContext();
 
-// Context provider
 export const QuantityProvider = ({ children }) => {
   const [quantity, setQuantity] = useState({
     large: 0,
@@ -18,7 +16,6 @@ export const QuantityProvider = ({ children }) => {
   );
 };
 
-// Custom hook to use QuantityContext
 export const useQuantity = () => {
   const context = useContext(QuantityContext);
   if (!context) {

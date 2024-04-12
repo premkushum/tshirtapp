@@ -1,8 +1,8 @@
 import React from 'react';
 import { QuantityProvider } from './QuantityContext';
-import ProductForm from './ProductForm';
-import Product from './Product';
-import Button from './Button';
+import ProductForm from './Components/ProductForm'
+import Product from './Components/Product'
+import Button from './Components/Button';
 import "./App.css"
 
 const App = () => {

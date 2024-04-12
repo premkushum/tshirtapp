@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { QuantityContext } from './QuantityContext';
+import { QuantityContext } from '../QuantityContext';
 
 const Product = ({ name, description, price }) => {
   const { quantity, setQuantity } = useContext(QuantityContext);

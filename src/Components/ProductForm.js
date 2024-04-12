@@ -1,5 +1,5 @@
 import React, { useState, useContext } from 'react';
-import { QuantityContext } from './QuantityContext';
+import { QuantityContext } from '../QuantityContext';
 
 const ProductForm = ({ onAddProduct }) => {
   const [name, setName] = useState('');
@@ -25,8 +25,6 @@ const ProductForm = ({ onAddProduct }) => {
     setQuantityLarge('');
     setQuantityMedium('');
     setQuantitySmall('');
-
-    // Update context with the new quantities
     setQuantity(prevQuantity => ({
       large: prevQuantity.large + parseInt(quantityLarge),
       medium: prevQuantity.medium + parseInt(quantityMedium),

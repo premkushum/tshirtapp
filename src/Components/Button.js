@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { QuantityContext } from './QuantityContext';
+import { QuantityContext } from '../QuantityContext';
 
 const Button = ({ onClick, label }) => {
   const { quantity } = useContext(QuantityContext);
